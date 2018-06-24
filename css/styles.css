@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    height: 100vh;
+    background-image: url('../images/checkers.jpg');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 170px 0;
+}
+
+header .logo{
+    width: 75%;
+}
+
+header h5{
+    font-family: 'Lato', 'Arial', 'Helvetica';
+    font-size: 34px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+header .links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 14vh;
+}
