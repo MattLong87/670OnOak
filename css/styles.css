@@ -33,3 +33,39 @@ header .links{
     align-items: center;
     height: 14vh;
 }
+
+header .links h5{
+    opacity: 0; /* initial opacity before animation plays */
+    animation-fill-mode: forwards; /* keeps state at last frame of animation */
+}
+
+.fade-in-from-left{
+    animation: fade-in-from-left 1.3s ease;
+}
+
+.fade-in-from-right{
+    animation: fade-in-from-right 1.3s ease;
+}
+
+.delay-1{
+    animation-delay: .2s;
+}
+
+.delay-2{
+    animation-delay: .4s;
+}
+
+.delay-3{
+    animation-delay: .6s;
+}
+
+@keyframes fade-in-from-left{
+    0%{
+        transform: translateX(-250px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
