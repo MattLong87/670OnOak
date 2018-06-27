@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Lato', 'Arial', 'Helvetica';
+    color: #fff;
+}
+
+/* HEADER SECTION */
+
 header{
     height: 100vh;
     background-image: url('../images/checkers.jpg');
@@ -11,17 +18,15 @@ header{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 170px 0;
+    padding: 220px 0;
 }
 
 header .logo{
-    width: 75%;
+    width: 63%;
 }
 
 header h5{
-    font-family: 'Lato', 'Arial', 'Helvetica';
     font-size: 34px;
-    color: #fff;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
@@ -41,10 +46,8 @@ header .links h5{
 
 .fade-in-from-left{
     animation: fade-in-from-left 1.3s ease;
-}
-
-.fade-in-from-right{
-    animation: fade-in-from-right 1.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .delay-1{
@@ -68,4 +71,65 @@ header .links h5{
         transform: translateX(0);
         opacity: 1;
     }
+}
+
+/* MAIN SECTIONS */
+
+main section{
+    text-align: center;
+    background-attachment: fixed;
+}
+
+.our-menu{
+    height: 80vh;
+    background-image: url('../images/sandwich.jpg');
+    background-size: cover;
+    background-position-x: -200px;
+    position: relative;
+}
+
+.craft-brews{
+    height: 80vh;
+    background-image: url('../images/glass.jpg');
+    background-size: cover;
+    background-position-x: -660px;
+    position: relative;
+}
+
+.live-music{
+    height: 80vh;
+    background-image: url('../images/guitar.jpg');
+    background-size: cover;
+    background-position-x: -660px;
+    position: relative;
+}
+
+section h2.section-title{
+    font-size: 48px;
+    font-weight: 200;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    display: inline-block;
+    margin-top: 170px;
+}
+
+section p{
+    font-size: 42px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    line-height: 1.1;
+    width: 70%;
+    background: rgba(0,0,0,.5);
+    padding: 47px;
+    margin-top: 756px;
+}
+
+.our-menu p{
+    text-align: left;
+}
+
+.craft-brews p{
+    text-align: right;
+    position: absolute;
+    right: 0;
 }
